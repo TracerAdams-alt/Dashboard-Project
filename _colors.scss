@@ -1,0 +1,15 @@
+%primary-headergradient { 
+    background-image: linear-gradient( 80deg, rgb(124, 74, 125) 20%, rgb(29, 27, 81) 80%)
+}
+%calendar-header {
+    background-image: linear-gradient( 80deg, rgb(29, 27, 81)20%, rgb(124, 74, 125)80%)
+}
+$primary-radius: 30px;
+$calendar-background: rgb(38, 38, 38);
+$mini-headercolor: rgb(22, 15, 58);
+$event-notifycolor: rgb(242, 242, 242);
+$gotogroup-pagecolor: rgb(124, 171, 235);
+$divider-line1: rgb(104, 187, 196);
+$divider-line2: rgb(240, 149, 70);
+$sidebar-fontcolor: rgb(62, 62, 62);
+$addevent: rgb(94, 153, 251)
