@@ -65,6 +65,49 @@ header {
         margin: 0 5px 0 15px;
     }
 }
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > * {
+        margin-left: 30px;
+    }
+    .svg {
+        margin-right: 5px;
+    }
+    .add-event {
+        display: flex;
+        align-items: center;
+        padding: 5px 15px;
+        background-color: colors.$addevent;
+        border-radius: colors.$primary-radius;
+        -webkit-border-radius: colors.$primary-radius;
+        -moz-border-radius: colors.$primary-radius;
+        -ms-border-radius: colors.$primary-radius;
+        -o-border-radius: colors.$primary-radius;
+        border: none;
+    }
+    span {
+        font-size: 16px;
+    }
+    .notifications {
+        border: none;
+        background-color: rgba(0,0,0,0);
+    }
+    .profile {
+        background-image: url(../images/eagle.jpg);
+        background-size: contain;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+}
 
 
 section {

@@ -71,6 +71,50 @@ header * {
   margin: 0 5px 0 15px;
 }
 
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-actions > * {
+  margin-left: 30px;
+}
+.header-actions .svg {
+  margin-right: 5px;
+}
+.header-actions .add-event {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: rgb(94, 153, 251);
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border: none;
+}
+.header-actions span {
+  font-size: 16px;
+}
+.header-actions .notifications {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.header-actions .profile {
+  background-image: url(../images/eagle.jpg);
+  background-size: contain;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 section {
   padding: 0 25px;
 }
