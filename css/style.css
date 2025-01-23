@@ -67,6 +67,9 @@ header * {
   border: none;
   font-size: 17px;
 }
+.search-container input:focus {
+  outline: none;
+}
 .search-container img {
   margin: 0 5px 0 15px;
 }
