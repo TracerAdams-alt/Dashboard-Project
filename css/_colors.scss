@@ -1,9 +1,5 @@
-%primary-headergradient { 
-    background-image: linear-gradient( 80deg, rgb(124, 74, 125) 20%, rgb(29, 27, 81) 80%)
-}
-%calendar-header {
-    background-image: linear-gradient( 80deg, rgb(29, 27, 81)20%, rgb(124, 74, 125)80%)
-}
+$header-gradient: linear-gradient( 80deg, rgb(124, 74, 125) 20%, rgb(29, 27, 81) 80%);
+$calendar-header: linear-gradient( 80deg, rgb(29, 27, 81)20%, rgb(124, 74, 125)80%);
 $primary-radius: 30px;
 $calendar-background: rgb(38, 38, 38);
 $mini-headercolor: rgb(22, 15, 58);

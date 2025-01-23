@@ -1,1 +1,10 @@
-/*# sourceMappingURL=style.css.map */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(80deg, rgb(124, 74, 125) 20%, rgb(29, 27, 81) 80%);
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */
