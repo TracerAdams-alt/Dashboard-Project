@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     background: colors.$header-gradient;
-    padding-inline: 15px;
+    padding: 0 25px;
 }
 .svg {
     width: 30px;
@@ -31,6 +31,7 @@ header {
 
 
 section {
+    padding: 0 25px;
     div {
         display: flex;
         flex-direction: row;

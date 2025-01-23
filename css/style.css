@@ -6,7 +6,7 @@ header {
   display: flex;
   justify-content: space-between;
   background: linear-gradient(80deg, rgb(124, 74, 125) 20%, rgb(29, 27, 81) 80%);
-  padding-inline: 15px;
+  padding: 0 25px;
 }
 
 .svg {
@@ -28,14 +28,16 @@ header {
   width: 150px;
 }
 
+section {
+  padding: 0 25px;
+}
 section div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-
 section .left {
-  width: 300px;
+  width: 200px;
   display: flex;
   flex-flow: column nowrap;
 }
