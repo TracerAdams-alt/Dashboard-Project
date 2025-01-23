@@ -6,6 +6,8 @@ section div {
 
 section .left {
   width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
 }
 section .right {
   width: auto;
