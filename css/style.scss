@@ -114,6 +114,7 @@ header {
 
 
 section {
+    display: flex;
     padding: 0 25px;
     div {
         display: flex;
@@ -148,10 +149,7 @@ section {
     }
     .right {
         display: flex;
-        justify-content: space-between;
-        align-items: space-between;
-        width: 1000px;
-        position: relative;
-        bottom: 80%;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 }

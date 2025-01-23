@@ -119,6 +119,7 @@ header * {
 }
 
 section {
+  display: flex;
   padding: 0 25px;
 }
 section div {
@@ -154,9 +155,6 @@ section .left .navtxt {
 }
 section .right {
   display: flex;
-  justify-content: space-between;
-  align-items: space-between;
-  width: 1000px;
-  position: relative;
-  bottom: 80%;
+  justify-content: flex-start;
+  align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */
