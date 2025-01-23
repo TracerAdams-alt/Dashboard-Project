@@ -1,0 +1,15 @@
+section {
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+section {
+    .left {
+        width: 300px;
+    }
+    .right {
+        width: auto;
+    }
+}

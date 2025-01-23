@@ -1,1 +1,12 @@
-/*# sourceMappingURL=style.css.map */
+section div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+section .left {
+  width: 300px;
+}
+section .right {
+  width: auto;
+}/*# sourceMappingURL=style.css.map */
