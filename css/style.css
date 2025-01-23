@@ -89,11 +89,14 @@ section div .nav img {
   margin-right: 20px;
 }
 section div .settings {
+  padding-top: 30px;
+  margin-right: 30px;
+  border-top: 2px solid rgba(0, 0, 0, 0.261);
   text-decoration: none;
   color: black;
-  margin: 40px;
 }
 section .left {
+  border-right: 2px solid rgba(0, 0, 0, 0.261);
   width: 200px;
   display: flex;
   flex-flow: column nowrap;
@@ -103,5 +106,10 @@ section .left .navtxt {
   bottom: 4px;
 }
 section .right {
-  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 1000px;
+  position: relative;
+  bottom: 80%;
 }/*# sourceMappingURL=style.css.map */
