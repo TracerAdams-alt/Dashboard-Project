@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -72,11 +78,29 @@ section div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: center;
+}
+section div .nav {
+  margin-top: 38px;
+  text-decoration: none;
+  color: black;
+}
+section div .nav img {
+  margin-right: 20px;
+}
+section div .settings {
+  text-decoration: none;
+  color: black;
+  margin: 40px;
 }
 section .left {
   width: 200px;
   display: flex;
   flex-flow: column nowrap;
+}
+section .left .navtxt {
+  position: relative;
+  bottom: 4px;
 }
 section .right {
   width: auto;
