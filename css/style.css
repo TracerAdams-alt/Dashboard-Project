@@ -13,9 +13,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(3deg, rgb(124, 74, 125) 3%, rgb(29, 27, 81) 70%);
+  background: linear-gradient(2deg, rgb(124, 74, 125) 5%, rgb(29, 27, 81) 40%);
   padding: 0 25px;
-  height: 70px;
+  height: 100px;
 }
 header * {
   color: white;
@@ -55,8 +55,8 @@ header * {
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
-  height: 70%;
-  width: 40%;
+  height: 60%;
+  width: 42%;
 }
 .search-container input {
   background-color: rgba(0, 0, 0, 0);
@@ -88,7 +88,7 @@ header * {
 .header-actions .add-event {
   display: flex;
   align-items: center;
-  padding: 5px 15px;
+  padding: 8px 18px;
   background-color: rgb(94, 153, 251);
   border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -98,7 +98,7 @@ header * {
   border: none;
 }
 .header-actions span {
-  font-size: 16px;
+  font-size: 18px;
 }
 .header-actions .notifications {
   border: none;
@@ -145,7 +145,7 @@ section div .settings {
 }
 section .left {
   border-right: 2px solid rgba(0, 0, 0, 0.261);
-  width: 200px;
+  width: 250px;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -155,6 +155,68 @@ section .left .navtxt {
 }
 section .right {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  width: 100%;
+  flex-flow: column wrap;
+  align-items: start;
+  justify-content: start;
+  margin: 30px 70px;
+}
+section .right .edit-event {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+section .right .edit-event .svg {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+section .right .events-container {
+  width: 100%;
+}
+section .right .events-container .event-container {
+  width: 30%;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+section .right .events-container .event-container .event-header {
+  color: white;
+  background-color: rgb(22, 15, 58);
+}
+section .right .events-container .event-container .event-header h3 {
+  font-weight: 100;
+}
+section .right .events-container .event-container .event-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .right .events-container .event-container .event-info-container .event-status {
+  width: 85%;
+  display: flex;
+  padding: 15px;
+  background-color: #eee;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+section .right .events-container .event-container .event-info-container .event-status .svg {
+  width: 20px;
+  height: 20px;
+}
+section .right .events-container .event-container .event-info-container .event-status span, section .right .events-container .event-container .event-info-container .event-status p {
+  color: #999;
+}
+section .right .events-container .event-container .event-info-container .event-status > div {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+section .right .events-container .event-container .event-info-container .event-status > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

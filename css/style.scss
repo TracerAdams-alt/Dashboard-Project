@@ -14,7 +14,7 @@ header {
     align-items: center;
     background: colors.$header-gradient;
     padding: 0 25px;
-    height: 70px;
+    height: 100px;
     * {
         color: white;
     }
@@ -50,8 +50,8 @@ header {
     -moz-border-radius: colors.$primary-radius;
     -ms-border-radius: colors.$primary-radius;
     -o-border-radius: colors.$primary-radius;
-    height: 70%;
-    width: 40%;
+    height: 60%;
+    width: 42%;
     input {
         background-color: rgba(0,0,0,0);
         width: 88%;
@@ -81,7 +81,7 @@ header {
     .add-event {
         display: flex;
         align-items: center;
-        padding: 5px 15px;
+        padding: 8px 18px;
         background-color: colors.$addevent;
         border-radius: colors.$primary-radius;
         -webkit-border-radius: colors.$primary-radius;
@@ -91,7 +91,7 @@ header {
         border: none;
     }
     span {
-        font-size: 16px;
+        font-size: 18px;
     }
     .notifications {
         border: none;
@@ -139,7 +139,7 @@ section {
     }
     .left {
         border-right: 2px solid rgba(0, 0, 0, 0.261);
-        width: 200px;
+        width: 250px;
         display: flex;
         flex-flow: column nowrap;
         .navtxt {
@@ -149,7 +149,69 @@ section {
     }
     .right {
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        width: 100%;
+        flex-flow: column wrap;
+        align-items: start;
+        justify-content: start;
+        margin: 30px 70px;
+        .edit-event {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            .svg {
+                margin-left: 10px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .events-container {
+            width: 100%;
+            .event-container {
+                width: 30%;
+                border-radius: 20px;
+                border: 1px solid #ccc;
+                display: flex;
+                flex-direction: column;
+                .event-header {
+                    color: white;
+                    background-color: colors.$mini-headercolor;
+                    h3 {
+                        font-weight: 100;
+                    }
+                }
+                .event-info-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .event-status {
+                        width: 85%;
+                        display: flex;
+                        padding: 15px;
+                        background-color: #eee;
+                        border-radius: 20px;
+                        border: 1px solid #ccc;
+                        .svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                        span, p {
+                            color: #999
+                        }
+                        > div {
+                            margin: 0 15px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            > div {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
