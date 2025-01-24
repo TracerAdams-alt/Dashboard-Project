@@ -174,6 +174,8 @@ section .right .edit-event .svg {
 }
 section .right .events-container {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 section .right .events-container .event-container {
   width: 30%;
@@ -219,4 +221,67 @@ section .right .events-container .event-container .event-info-container .event-s
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+section .right .events-container .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(80deg, rgb(29, 27, 81) 20%, rgb(124, 74, 125) 80%);
+  color: white;
+  font-weight: 100;
+  padding-inline: 30px;
+  border-radius: 20px 20px 0 0;
+  height: 10vh;
+  width: 100%;
+}
+section .right .events-container .calendar-header h3 {
+  margin-inline: 8px;
+}
+section .right .events-container .calendar {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(38, 38, 38);
+  border-radius: 20px;
+  height: 100vh;
+  width: 30vw;
+}
+section .right .events-container .calendar h3 {
+  margin-top: 16px;
+}
+section .right .events-container .calendar .calendar-body {
+  width: 55vh;
+  height: 30vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-block: 30px;
+  padding-inline: 30px;
+}
+section .right .events-container .calendar .calendar-body .cal-button {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+section .right .events-container .calendar .calendar-body .cal-button .pending {
+  background-color: rgb(38, 38, 38);
+  color: whitesmoke;
+  border: solid 1px whitesmoke;
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+section .right .events-container .calendar .calendar-body .cal-button .calendar-svg-button {
+  padding-block: 10px;
+  padding-inline: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+section .right .events-container .calendar .calendar-body .cal-button .calendar-svg-button2 {
+  padding-block: 10px;
+  padding-inline: 13px;
+  border-radius: 100px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
