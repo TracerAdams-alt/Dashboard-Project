@@ -239,7 +239,7 @@ section .right .events-container .calendar-header h3 {
 }
 section .right .events-container .calendar {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: start;
   align-items: center;
   background-color: rgb(38, 38, 38);
@@ -250,21 +250,26 @@ section .right .events-container .calendar {
 section .right .events-container .calendar h3 {
   margin-top: 16px;
 }
-section .right .events-container .calendar .calendar-body {
+section .right .events-container .calendar .cal-flex-col {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+section .right .events-container .calendar .cal-flex-col .cal-flex-row {
   width: 55vh;
-  height: 30vw;
+  height: 17vh;
   display: flex;
   justify-content: space-between;
   align-items: start;
   padding-block: 30px;
   padding-inline: 30px;
 }
-section .right .events-container .calendar .calendar-body .cal-button {
+section .right .events-container .calendar .cal-flex-col .cal-flex-row .cal-button {
   display: flex;
   justify-content: space-around;
   width: 30%;
 }
-section .right .events-container .calendar .calendar-body .cal-button .pending {
+section .right .events-container .calendar .cal-flex-col .cal-flex-row .cal-button .pending {
   background-color: rgb(38, 38, 38);
   color: whitesmoke;
   border: solid 1px whitesmoke;
@@ -273,15 +278,44 @@ section .right .events-container .calendar .calendar-body .cal-button .pending {
   margin-left: 8px;
   cursor: pointer;
 }
-section .right .events-container .calendar .calendar-body .cal-button .calendar-svg-button {
+section .right .events-container .calendar .cal-flex-col .cal-flex-row .cal-button .calendar-svg-button {
   padding-block: 10px;
   padding-inline: 13px;
   border-radius: 8px;
   cursor: pointer;
 }
-section .right .events-container .calendar .calendar-body .cal-button .calendar-svg-button2 {
+section .right .events-container .calendar .cal-flex-col .cal-flex-row .cal-button .calendar-svg-button2 {
   padding-block: 10px;
   padding-inline: 13px;
   border-radius: 100px;
   cursor: pointer;
+}
+section .right .events-container .calendar .cal-flex-col .calendar-dy {
+  display: block;
+  text-align: center;
+  align-items: center;
+  color: whitesmoke;
+  font-weight: 100;
+}
+section .right .events-container .calendar .cal-flex-col .calendar-dy img {
+  background-color: rgb(38, 38, 38);
+  vertical-align: middle;
+  height: 20px;
+  border-radius: 5px;
+}
+section .right .events-container .calendar .cal-flex-col .calendar-dy button {
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+section .right .events-container .calendar .cal-flex-col .year {
+  display: block;
+}
+section .right .events-container .calendar .cal-flex-col .month {
+  display: inline;
+  margin-inline: 20px;
+  position: relative;
+  top: 5px;
+}
+section .right .events-container .calendar .cal-flex-col .cal-bf {
+  display: inline;
 }/*# sourceMappingURL=style.css.map */
