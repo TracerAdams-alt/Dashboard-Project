@@ -174,12 +174,15 @@ section {
         }
         .events-container {
             width: 66%;
+            min-width: 66%;
             display: flex;
             flex-wrap: wrap;
+            display: flex;
             .event-container {
-                margin: 1%;
+                margin-right: 25px;
+                margin-bottom: 25px;
                 border-radius: colors.$primary-radius;
-                width: 48%;
+                width: calc(50% - 25px);
                 border: 1px solid #ccc;
                 display: flex;
                 flex-direction: column;
@@ -348,6 +351,106 @@ section {
                         -ms-border-radius: 50px;
                         -o-border-radius: 50px;
                         padding: 15px;
+                    }
+                }
+            }
+        }
+        .dash-container {
+            display: flex;
+            .calendar-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-image: colors.$calendar-header;
+                color: white;
+                font-weight: 100;
+                padding-inline: 30px;
+                border-radius: 20px 20px 0 0;
+                height: 10vh;
+                width: 100%;
+                h3 {
+                    margin-inline: 8px;
+                }
+            }
+            .calendar {
+                width: 100%;
+                min-width: 34%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: start;
+                align-items: center;
+                background-color: colors.$calendar-background;
+                border-radius: 20px;
+                h3 {
+                    margin-top: 16px;
+                }
+                .cal-flex-col{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    .cal-flex-row {
+                        width: 55vh;
+                        height: 17vh;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: start;
+                        padding-block: 30px;
+                        padding-inline: 30px;
+                        .cal-button {
+                            display: flex;
+                            justify-content: space-around;
+                            width: 30%;
+                            .pending {
+                                background-color: colors.$calendar-background;
+                                color: whitesmoke;
+                                border: solid 1px whitesmoke;
+                                border-radius: 8px;
+                                padding: 10px;
+                                margin-left: 8px;
+                                cursor: pointer;
+                            }
+                            .calendar-svg-button {
+                                padding-block: 10px;
+                                padding-inline: 13px;
+                                border-radius: 8px;
+                                cursor: pointer;
+                            }
+                            .calendar-svg-button2 {
+                                padding-block: 10px;
+                                padding-inline: 13px;
+                                border-radius: 100px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .calendar-dy {
+                        display: block;
+                        text-align: center;
+                        align-items: center;
+                        color: whitesmoke;
+                        font-weight: 100;
+                        img {
+                            background-color: colors.$calendar-background;
+                            vertical-align: middle;
+                            height: 20px;
+                            border-radius: 5px;
+                        }
+                        button {
+                            border: 1px solid whitesmoke;
+                            border-radius: 5px;
+                        }
+                    }
+                    .year {
+                        display: block;
+                    }
+                    .month {
+                        display: inline;
+                        margin-inline: 20px;
+                        position: relative;
+                        top: 5px;
+                    }
+                    .cal-bf {
+                        display: inline;
                     }
                 }
             }
