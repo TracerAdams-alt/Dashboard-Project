@@ -16,7 +16,6 @@ header {
   background: linear-gradient(2deg, rgb(124, 74, 125) 5%, rgb(29, 27, 81) 40%);
   padding: 0 25px;
   height: 100px;
-  width: 100vw;
 }
 header * {
   color: white;
@@ -119,37 +118,37 @@ header * {
   -o-border-radius: 50%;
 }
 
-section {
+.dash-bar {
   display: flex;
   padding: 0 25px;
 }
-section .left {
+.dash-bar .left {
   border-right: 2px solid rgba(0, 0, 0, 0.261);
   width: 250px;
   display: flex;
   align-items: start;
   flex-direction: column;
 }
-section .left .nav {
+.dash-bar .left .nav {
   display: flex;
   align-items: center;
   margin-top: 38px;
   text-decoration: none;
   color: black;
 }
-section .left .nav img {
+.dash-bar .left .nav img {
   margin-right: 20px;
 }
-section .left .nav .navtxt {
+.dash-bar .left .nav .navtxt {
   margin-top: 1px;
 }
-section .left .line-container {
+.dash-bar .left .line-container {
   display: flex;
   justify-content: center;
   width: 100%;
   padding-right: 25px;
 }
-section .left .line-container .break-line {
+.dash-bar .left .line-container .break-line {
   height: 2px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.261);
@@ -159,33 +158,33 @@ section .left .line-container .break-line {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-section .right {
+.dash-bar .right {
   display: flex;
   width: 100%;
   flex-flow: column wrap;
   align-items: start;
   justify-content: start;
-  margin: 30px 70px;
+  margin: 30px 0 30px 70px;
 }
-section .right .edit-event {
+.dash-bar .right .edit-event {
   font-size: 20px;
   display: flex;
   align-items: center;
   margin: 30px 0;
 }
-section .right .edit-event .svg {
+.dash-bar .right .edit-event .svg {
   margin-left: 10px;
   width: 25px;
   height: 25px;
 }
-section .right .events-container {
+.dash-bar .right .events-container {
   width: 66%;
   min-width: 66%;
   display: flex;
   flex-wrap: wrap;
   display: flex;
 }
-section .right .events-container .event-container {
+.dash-bar .right .events-container .event-container {
   margin-right: 25px;
   margin-bottom: 25px;
   border-radius: 20px;
@@ -194,7 +193,7 @@ section .right .events-container .event-container {
   display: flex;
   flex-direction: column;
 }
-section .right .events-container .event-container .event-header {
+.dash-bar .right .events-container .event-container .event-header {
   padding: 30px 0;
   display: flex;
   justify-content: space-between;
@@ -204,22 +203,22 @@ section .right .events-container .event-container .event-header {
   color: white;
   background-color: rgb(22, 15, 58);
 }
-section .right .events-container .event-container .event-header > * {
+.dash-bar .right .events-container .event-container .event-header > * {
   margin: 0 25px;
 }
-section .right .events-container .event-container .event-header h3 {
+.dash-bar .right .events-container .event-container .event-header h3 {
   font-size: 25px;
   font-weight: 100;
 }
-section .right .events-container .event-container .event-info-container {
+.dash-bar .right .events-container .event-container .event-info-container {
   margin: 0 25px 25px 25px;
   display: flex;
   flex-direction: column;
 }
-section .right .events-container .event-container .event-info-container > * {
+.dash-bar .right .events-container .event-container .event-info-container > * {
   margin-top: 20px;
 }
-section .right .events-container .event-container .event-info-container .event-status {
+.dash-bar .right .events-container .event-container .event-info-container .event-status {
   border-radius: 20px;
   display: flex;
   padding: 15px;
@@ -228,43 +227,43 @@ section .right .events-container .event-container .event-info-container .event-s
   border-radius: 20px;
   border: 1px solid #ccc;
 }
-section .right .events-container .event-container .event-info-container .event-status .svg {
+.dash-bar .right .events-container .event-container .event-info-container .event-status .svg {
   width: 20px;
   height: 20px;
 }
-section .right .events-container .event-container .event-info-container .event-status span, section .right .events-container .event-container .event-info-container .event-status p {
+.dash-bar .right .events-container .event-container .event-info-container .event-status span, .dash-bar .right .events-container .event-container .event-info-container .event-status p {
   color: #999;
   font-size: 14px;
 }
-section .right .events-container .event-container .event-info-container .event-status > div {
+.dash-bar .right .events-container .event-container .event-info-container .event-status > div {
   width: 100%;
   margin: 0 15px;
   display: flex;
   flex-direction: column;
 }
-section .right .events-container .event-container .event-info-container .event-status > div > div {
+.dash-bar .right .events-container .event-container .event-info-container .event-status > div > div {
   margin-bottom: 5px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-section .right .events-container .event-container .event-info-container .event-status > div > div b {
+.dash-bar .right .events-container .event-container .event-info-container .event-status > div > div b {
   font-size: 18px;
 }
-section .right .events-container .event-container .event-info-container .event-date-container {
+.dash-bar .right .events-container .event-container .event-info-container .event-date-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-section .right .events-container .event-container .event-info-container .event-date-container .date {
+.dash-bar .right .events-container .event-container .event-info-container .event-date-container .date {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section .right .events-container .event-container .event-info-container .event-date-container .date b {
+.dash-bar .right .events-container .event-container .event-info-container .event-date-container .date b {
   font-size: 30px;
 }
-section .right .events-container .event-container .event-info-container .event-date-container .bar {
+.dash-bar .right .events-container .event-container .event-info-container .event-date-container .bar {
   height: 100%;
   width: 5px;
   background-color: rgb(104, 187, 196);
@@ -274,7 +273,7 @@ section .right .events-container .event-container .event-info-container .event-d
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-section .right .events-container .event-container .event-info-container .event-date-container .pfp {
+.dash-bar .right .events-container .event-container .event-info-container .event-date-container .pfp {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -287,28 +286,28 @@ section .right .events-container .event-container .event-info-container .event-d
   background-position: center;
   background-size: cover;
 }
-section .right .events-container .event-container .event-info-container .event-date-container .exact-info {
+.dash-bar .right .events-container .event-container .event-info-container .event-date-container .exact-info {
   width: 65%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-section .right .events-container .event-container .event-info-container .event-date-container .exact-info > * {
+.dash-bar .right .events-container .event-container .event-info-container .event-date-container .exact-info > * {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-section .right .events-container .event-container .event-info-container .event-date-container .exact-info > * p {
+.dash-bar .right .events-container .event-container .event-info-container .event-date-container .exact-info > * p {
   font-size: 15px;
   color: #222;
 }
-section .right .events-container .event-container .event-info-container .announcements-container {
+.dash-bar .right .events-container .event-container .event-info-container .announcements-container {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-section .right .events-container .event-container .event-info-container .announcements-container .announcement-info {
+.dash-bar .right .events-container .event-container .event-info-container .announcements-container .announcement-info {
   margin-top: 10px;
   padding: 15px;
   width: 100%;
@@ -320,7 +319,7 @@ section .right .events-container .event-container .event-info-container .announc
   -o-border-radius: 20px;
   border: 1px #ccc solid;
 }
-section .right .events-container .event-container .event-info-container .announcements-container .announcement-info .pfp {
+.dash-bar .right .events-container .event-container .event-info-container .announcements-container .announcement-info .pfp {
   border: 1px solid #000;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -336,20 +335,20 @@ section .right .events-container .event-container .event-info-container .announc
   background-size: cover;
   background-position: center;
 }
-section .right .events-container .event-container .event-info-container .announcements-container .announcement-info .announcement-container {
+.dash-bar .right .events-container .event-container .event-info-container .announcements-container .announcement-info .announcement-container {
   display: flex;
   align-content: space-between;
   flex-direction: column;
 }
-section .right .events-container .event-container .event-info-container .announcements-container .announcement-info .announcement-container .name-time {
+.dash-bar .right .events-container .event-container .event-info-container .announcements-container .announcement-info .announcement-container .name-time {
   display: flex;
   justify-content: space-between;
 }
-section .right .events-container .event-container .event-info-container .announcements-container .announcement-info .announcement-container .name-time span, section .right .events-container .event-container .event-info-container .announcements-container .announcement-info .announcement-container p {
+.dash-bar .right .events-container .event-container .event-info-container .announcements-container .announcement-info .announcement-container .name-time span, .dash-bar .right .events-container .event-container .event-info-container .announcements-container .announcement-info .announcement-container p {
   color: #555;
   font-size: 14px;
 }
-section .right .events-container .event-container .event-info-container .group-page {
+.dash-bar .right .events-container .event-container .event-info-container .group-page {
   background-color: #fff;
   font-size: 20px;
   font-weight: 700;
@@ -362,10 +361,10 @@ section .right .events-container .event-container .event-info-container .group-p
   -o-border-radius: 50px;
   padding: 15px;
 }
-section .right .dash-container {
+.dash-bar .right .dash-container {
   display: flex;
 }
-section .right .dash-container .calendar-header {
+.dash-bar .right .dash-container .calendar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -377,10 +376,10 @@ section .right .dash-container .calendar-header {
   height: 10vh;
   width: 100%;
 }
-section .right .dash-container .calendar-header h3 {
+.dash-bar .right .dash-container .calendar-header h3 {
   margin-inline: 8px;
 }
-section .right .dash-container .calendar {
+.dash-bar .right .dash-container .calendar {
   width: 100%;
   min-width: 34%;
   display: flex;
@@ -390,15 +389,15 @@ section .right .dash-container .calendar {
   background-color: rgb(38, 38, 38);
   border-radius: 20px;
 }
-section .right .dash-container .calendar h3 {
+.dash-bar .right .dash-container .calendar h3 {
   margin-top: 16px;
 }
-section .right .dash-container .calendar .cal-flex-col {
+.dash-bar .right .dash-container .calendar .cal-flex-col {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-section .right .dash-container .calendar .cal-flex-col .cal-flex-row {
+.dash-bar .right .dash-container .calendar .cal-flex-col .cal-flex-row {
   width: 55vh;
   height: 17vh;
   display: flex;
@@ -407,12 +406,12 @@ section .right .dash-container .calendar .cal-flex-col .cal-flex-row {
   padding-block: 30px;
   padding-inline: 30px;
 }
-section .right .dash-container .calendar .cal-flex-col .cal-flex-row .cal-button {
+.dash-bar .right .dash-container .calendar .cal-flex-col .cal-flex-row .cal-button {
   display: flex;
   justify-content: space-around;
   width: 30%;
 }
-section .right .dash-container .calendar .cal-flex-col .cal-flex-row .cal-button .pending {
+.dash-bar .right .dash-container .calendar .cal-flex-col .cal-flex-row .cal-button .pending {
   background-color: rgb(38, 38, 38);
   color: whitesmoke;
   border: solid 1px whitesmoke;
@@ -421,45 +420,45 @@ section .right .dash-container .calendar .cal-flex-col .cal-flex-row .cal-button
   margin-left: 8px;
   cursor: pointer;
 }
-section .right .dash-container .calendar .cal-flex-col .cal-flex-row .cal-button .calendar-svg-button {
+.dash-bar .right .dash-container .calendar .cal-flex-col .cal-flex-row .cal-button .calendar-svg-button {
   padding-block: 10px;
   padding-inline: 13px;
   border-radius: 8px;
   cursor: pointer;
 }
-section .right .dash-container .calendar .cal-flex-col .cal-flex-row .cal-button .calendar-svg-button2 {
+.dash-bar .right .dash-container .calendar .cal-flex-col .cal-flex-row .cal-button .calendar-svg-button2 {
   padding-block: 10px;
   padding-inline: 13px;
   border-radius: 100px;
   cursor: pointer;
 }
-section .right .dash-container .calendar .cal-flex-col .calendar-dy {
+.dash-bar .right .dash-container .calendar .cal-flex-col .calendar-dy {
   display: block;
   text-align: center;
   align-items: center;
   color: whitesmoke;
   font-weight: 100;
 }
-section .right .dash-container .calendar .cal-flex-col .calendar-dy img {
+.dash-bar .right .dash-container .calendar .cal-flex-col .calendar-dy img {
   background-color: rgb(38, 38, 38);
   vertical-align: middle;
   height: 20px;
   border-radius: 5px;
 }
-section .right .dash-container .calendar .cal-flex-col .calendar-dy button, section .right .dash-container .calendar .cal-flex-col .calendar-dy .date {
+.dash-bar .right .dash-container .calendar .cal-flex-col .calendar-dy button, .dash-bar .right .dash-container .calendar .cal-flex-col .calendar-dy .date {
   border: 1px solid whitesmoke;
   border-radius: 5px;
   cursor: pointer;
 }
-section .right .dash-container .calendar .cal-flex-col .year {
+.dash-bar .right .dash-container .calendar .cal-flex-col .year {
   display: block;
 }
-section .right .dash-container .calendar .cal-flex-col .month {
+.dash-bar .right .dash-container .calendar .cal-flex-col .month {
   display: inline;
   margin-inline: 20px;
   position: relative;
   top: 5px;
 }
-section .right .dash-container .calendar .cal-flex-col .cal-bf {
+.dash-bar .right .dash-container .calendar .cal-flex-col .cal-bf {
   display: inline;
 }/*# sourceMappingURL=style.css.map */
