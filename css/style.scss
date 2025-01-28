@@ -1,4 +1,7 @@
 @use '_colors.scss' as colors;
+@mixin rounded {
+    border-radius: 20px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -191,7 +194,7 @@ section {
                         display: flex;
                         padding: 15px;
                         background-color: #eee;
-                        border-radius: 20px;
+                        @include rounded();
                         border: 1px solid #ccc;
                         .svg {
                             width: 20px;
@@ -295,6 +298,10 @@ section {
                     button {
                         border: 1px solid whitesmoke;
                         border-radius: 5px;
+                        cursor: pointer;
+                    }
+                    .date {
+                        @extend button
                     }
                 }
                 .year {
