@@ -225,6 +225,7 @@ section .right .events-container .event-container .event-info-container .event-s
   padding: 15px;
   justify-content: start;
   background-color: #eee;
+  border-radius: 20px;
   border: 1px solid #ccc;
 }
 section .right .events-container .event-container .event-info-container .event-status .svg {
@@ -445,9 +446,10 @@ section .right .dash-container .calendar .cal-flex-col .calendar-dy img {
   height: 20px;
   border-radius: 5px;
 }
-section .right .dash-container .calendar .cal-flex-col .calendar-dy button {
+section .right .dash-container .calendar .cal-flex-col .calendar-dy button, section .right .dash-container .calendar .cal-flex-col .calendar-dy .date {
   border: 1px solid whitesmoke;
   border-radius: 5px;
+  cursor: pointer;
 }
 section .right .dash-container .calendar .cal-flex-col .year {
   display: block;
