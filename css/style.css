@@ -250,58 +250,6 @@ header * {
 .dash-bar .right .events-container .event-container .event-info-container .event-status > div > div b {
   font-size: 18px;
 }
-.dash-bar .right .events-container .event-container .event-info-container .event-date-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.dash-bar .right .events-container .event-container .event-info-container .event-date-container .date {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.dash-bar .right .events-container .event-container .event-info-container .event-date-container .date b {
-  font-size: 30px;
-}
-.dash-bar .right .events-container .event-container .event-info-container .event-date-container .bar {
-  height: 100%;
-  width: 5px;
-  background-color: rgb(104, 187, 196);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-.dash-bar .right .events-container .event-container .event-info-container .event-date-container .pfp {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border: 1px solid black;
-  background-image: url(../images/eagle.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.dash-bar .right .events-container .event-container .event-info-container .event-date-container .exact-info {
-  width: 65%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.dash-bar .right .events-container .event-container .event-info-container .event-date-container .exact-info > * {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.dash-bar .right .events-container .event-container .event-info-container .event-date-container .exact-info > * p {
-  font-size: 15px;
-  color: #222;
-}
 .dash-bar .right .events-container .event-container .event-info-container .announcements-container {
   display: flex;
   flex-direction: column;
@@ -389,6 +337,13 @@ header * {
   background-color: rgb(38, 38, 38);
   border-radius: 20px;
 }
+.dash-bar .right .dash-container .calendar .event-date-container {
+  margin-bottom: 15px;
+  width: 60%;
+}
+.dash-bar .right .dash-container .calendar .event-date-container * {
+  color: #ddd;
+}
 .dash-bar .right .dash-container .calendar h3 {
   margin-top: 16px;
 }
@@ -461,4 +416,56 @@ header * {
 }
 .dash-bar .right .dash-container .calendar .cal-flex-col .cal-bf {
   display: inline;
+}
+.dash-bar .event-date-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dash-bar .event-date-container .date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dash-bar .event-date-container .date b {
+  font-size: 30px;
+}
+.dash-bar .event-date-container .bar {
+  height: 100%;
+  width: 5px;
+  background-color: rgb(104, 187, 196);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.dash-bar .event-date-container .pfp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid black;
+  background-image: url(../images/eagle.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.dash-bar .event-date-container .exact-info {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.dash-bar .event-date-container .exact-info > * {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.dash-bar .event-date-container .exact-info > * p {
+  font-size: 15px;
+  color: #222;
 }/*# sourceMappingURL=style.css.map */

@@ -243,58 +243,6 @@ header {
                             }
                         }
                     }
-                    .event-date-container {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        .date {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            b {
-                                font-size: 30px;
-                            }
-                        }
-                        .bar {
-                            height: 100%;
-                            width: 5px;
-                            background-color: colors.$divider-line1;
-                            border-radius: 20px;
-                            -webkit-border-radius: 20px;
-                            -moz-border-radius: 20px;
-                            -ms-border-radius: 20px;
-                            -o-border-radius: 20px;
-                        }
-                        .pfp {
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 50%;
-                            -webkit-border-radius: 50%;
-                            -moz-border-radius: 50%;
-                            -ms-border-radius: 50%;
-                            -o-border-radius: 50%;
-                            border: 1px solid black;
-                            background-image: url(../images/eagle.jpg);
-                            background-position: center;
-                            background-size: cover;
-                        }
-                        .exact-info {
-                            width: 65%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            flex-direction: column;
-                            > * {
-                                width: 100%;
-                                display: flex;
-                                justify-content: space-between;
-                                p {
-                                    font-size: 15px;
-                                    color: #222
-                                }
-                            }
-                        }
-                    }
                     .announcements-container {
                         display: flex;
                         flex-direction: column;
@@ -383,6 +331,13 @@ header {
                 align-items: center;
                 background-color: colors.$calendar-background;
                 border-radius: 20px;
+                .event-date-container {
+                    margin-bottom: 15px;
+                    width: 60%;
+                    * {
+                        color: #ddd;
+                    }
+                }
                 h3 {
                     margin-top: 16px;
                 }
@@ -462,4 +417,57 @@ header {
             }
         }
     }
+    .event-date-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .date {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            b {
+                font-size: 30px;
+            }
+        }
+        .bar {
+            height: 100%;
+            width: 5px;
+            background-color: colors.$divider-line1;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+        .pfp {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border: 1px solid black;
+            background-image: url(../images/eagle.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .exact-info {
+            width: 65%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            > * {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                p {
+                    font-size: 15px;
+                    color: #222
+                }
+            }
+        }
+    }
 }
+
