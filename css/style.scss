@@ -1,6 +1,11 @@
 @use '_colors.scss' as colors;
-@mixin rounded {
-    border-radius: 20px;
+@import '_templates.scss';
+@mixin round($tl: 20px, $tr: 20px, $br: 20px, $bl: 20px) {
+    border-radius: $tl $tr $br $bl;
+    border: none;
+}
+@mixin circle {
+    border-radius: 50%;
 }
 * {
     margin: 0;
@@ -45,31 +50,7 @@ header {
     width: 110px;
 }
 .search-container {
-    display: flex;
-    align-items: center;
-    background-color: colors.$calendar-background;
-    border-radius: colors.$primary-radius;
-    -webkit-border-radius: colors.$primary-radius;
-    -moz-border-radius: colors.$primary-radius;
-    -ms-border-radius: colors.$primary-radius;
-    -o-border-radius: colors.$primary-radius;
-    height: 60%;
-    width: 42%;
-    input {
-        background-color: rgba(0,0,0,0);
-        width: 88%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        border: none;
-        font-size: 17px;
-    }
-    input:focus {
-        outline: none;
-    }
-    img {
-        margin: 0 5px 0 15px;
-    }
+    @include search-container;
 }
 .header-actions {
     display: flex;
@@ -86,11 +67,7 @@ header {
         align-items: center;
         padding: 8px 18px;
         background-color: colors.$addevent;
-        border-radius: colors.$primary-radius;
-        -webkit-border-radius: colors.$primary-radius;
-        -moz-border-radius: colors.$primary-radius;
-        -ms-border-radius: colors.$primary-radius;
-        -o-border-radius: colors.$primary-radius;
+        @include round;
         border: none;
     }
     span {
@@ -107,11 +84,7 @@ header {
         width: 30px;
         height: 30px;
         border: none;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
+        @include circle;
     }
 }
 
@@ -147,12 +120,8 @@ header {
                 height: 2px;
                 width: 100%;
                 background-color: rgba(0, 0, 0, 0.261);
-                border-radius: 10px;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
-                -ms-border-radius: 10px;
-                -o-border-radius: 10px;
-}
+                @include round;
+            }
         }
     }
     .right {
@@ -182,18 +151,17 @@ header {
             .event-container {
                 margin-right: 25px;
                 margin-bottom: 25px;
-                border-radius: colors.$primary-radius;
+                @include round;
                 width: calc(50% - 25px);
                 border: 1px solid #ccc;
                 display: flex;
                 flex-direction: column;
                 .event-header {
+                    @include round($bl: 0, $br: 0);
                     padding: 30px 0;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    border-top-left-radius: colors.$primary-radius;
-                    border-top-right-radius: colors.$primary-radius;
                     color: white;
                     background-color: colors.$mini-headercolor;
                     > * {
@@ -212,12 +180,11 @@ header {
                         margin-top: 20px;
                     }
                     .event-status {
-                        border-radius: colors.$primary-radius;
+                        @include round;
                         display: flex;
                         padding: 15px;
                         justify-content: start;
                         background-color: #eee;
-                        border-radius: 20px;
                         border: 1px solid #ccc;
                         .svg {
                             width: 20px;
@@ -252,19 +219,11 @@ header {
                             padding: 15px;
                             width: 100%;
                             display: flex;
-                            border-radius: colors.$primary-radius;
-                            -webkit-border-radius: colors.$primary-radius;
-                            -moz-border-radius: colors.$primary-radius;
-                            -ms-border-radius: colors.$primary-radius;
-                            -o-border-radius: colors.$primary-radius;
+                            @include round;
                             border: 1px #ccc solid;
                             .pfp {
                                 border: 1px solid #000;
-                                border-radius: 50%;
-                                -webkit-border-radius: 50%;
-                                -moz-border-radius: 50%;
-                                -ms-border-radius: 50%;
-                                -o-border-radius: 50%;
+                                @include circle;
                                 width: 70px;
                                 height: 70px;
                                 min-width: 70px;
@@ -296,10 +255,6 @@ header {
                         color: colors.$addevent;
                         border: 2px solid colors.$addevent;
                         border-radius: 50px;
-                        -webkit-border-radius: 50px;
-                        -moz-border-radius: 50px;
-                        -ms-border-radius: 50px;
-                        -o-border-radius: 50px;
                         padding: 15px;
                     }
                 }
@@ -315,7 +270,7 @@ header {
                 color: white;
                 font-weight: 100;
                 padding-inline: 30px;
-                border-radius: 20px 20px 0 0;
+                @include round($bl: 0, $br: 0);
                 height: 10vh;
                 width: 100%;
                 h3 {
@@ -330,7 +285,7 @@ header {
                 justify-content: start;
                 align-items: center;
                 background-color: colors.$calendar-background;
-                border-radius: 20px;
+                @include round;
                 .event-date-container {
                     margin-bottom: 15px;
                     width: 60%;
@@ -341,7 +296,7 @@ header {
                 h3 {
                     margin-top: 16px;
                 }
-                .cal-flex-col{
+                .cal-flex-col {
                     display: flex;
                     flex-flow: column nowrap;
                     align-items: center;
@@ -433,20 +388,12 @@ header {
             height: 100%;
             width: 5px;
             background-color: colors.$divider-line1;
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
+            @include round;
         }
         .pfp {
             width: 40px;
             height: 40px;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
+            @include circle;
             border: 1px solid black;
             background-image: url(../images/eagle.jpg);
             background-position: center;
